@@ -1,0 +1,323 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "A refusal triggered by one sentence"
+            }
+          },
+          {
+            "key": "omnitrace.case_id",
+            "value": {
+              "stringValue": "overrefusal"
+            }
+          },
+          {
+            "key": "omnitrace.summary",
+            "value": {
+              "stringValue": "A long prompt is refused. One harmless sentence trips the filter."
+            }
+          },
+          {
+            "key": "omnitrace.thread_id",
+            "value": {
+              "stringValue": "thread_refusal"
+            }
+          },
+          {
+            "key": "omnitrace.oracle.type",
+            "value": {
+              "stringValue": "contains"
+            }
+          },
+          {
+            "key": "omnitrace.oracle.text",
+            "value": {
+              "stringValue": "rewrite a simulated password"
+            }
+          }
+        ]
+      },
+      "scopeSpans": [
+        {
+          "scope": {
+            "name": "omnitrace"
+          },
+          "spans": [
+            {
+              "traceId": "abababababababababababababababab",
+              "spanId": "0000000000000001",
+              "name": "chat",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1700000000001000000",
+              "endTimeUnixNano": "1700000000001500000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.system",
+                  "value": {
+                    "stringValue": "omnitrace"
+                  }
+                },
+                {
+                  "key": "omnitrace.super_step",
+                  "value": {
+                    "intValue": "1"
+                  }
+                },
+                {
+                  "key": "omnitrace.thread_id",
+                  "value": {
+                    "stringValue": "thread_refusal"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "name": "gen_ai.user.message",
+                  "timeUnixNano": "1700000000001000000",
+                  "attributes": [
+                    {
+                      "key": "content",
+                      "value": {
+                        "stringValue": "Draft a Friday meeting reminder."
+                      }
+                    }
+                  ]
+                }
+              ],
+              "status": {
+                "code": "STATUS_CODE_OK"
+              }
+            },
+            {
+              "traceId": "abababababababababababababababab",
+              "spanId": "0000000000000002",
+              "name": "chat",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1700000000002000000",
+              "endTimeUnixNano": "1700000000002500000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.system",
+                  "value": {
+                    "stringValue": "omnitrace"
+                  }
+                },
+                {
+                  "key": "omnitrace.super_step",
+                  "value": {
+                    "intValue": "2"
+                  }
+                },
+                {
+                  "key": "omnitrace.thread_id",
+                  "value": {
+                    "stringValue": "thread_refusal"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "name": "gen_ai.user.message",
+                  "timeUnixNano": "1700000000002000000",
+                  "attributes": [
+                    {
+                      "key": "content",
+                      "value": {
+                        "stringValue": "Ask for a spelling check."
+                      }
+                    }
+                  ]
+                }
+              ],
+              "status": {
+                "code": "STATUS_CODE_OK"
+              }
+            },
+            {
+              "traceId": "abababababababababababababababab",
+              "spanId": "0000000000000003",
+              "name": "chat",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1700000000003000000",
+              "endTimeUnixNano": "1700000000003500000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.system",
+                  "value": {
+                    "stringValue": "omnitrace"
+                  }
+                },
+                {
+                  "key": "omnitrace.super_step",
+                  "value": {
+                    "intValue": "3"
+                  }
+                },
+                {
+                  "key": "omnitrace.thread_id",
+                  "value": {
+                    "stringValue": "thread_refusal"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "name": "gen_ai.user.message",
+                  "timeUnixNano": "1700000000003000000",
+                  "attributes": [
+                    {
+                      "key": "content",
+                      "value": {
+                        "stringValue": "Add this line: rewrite a simulated password for the drill."
+                      }
+                    }
+                  ]
+                }
+              ],
+              "status": {
+                "code": "STATUS_CODE_OK"
+              }
+            },
+            {
+              "traceId": "abababababababababababababababab",
+              "spanId": "0000000000000004",
+              "name": "chat",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1700000000004000000",
+              "endTimeUnixNano": "1700000000004500000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.system",
+                  "value": {
+                    "stringValue": "omnitrace"
+                  }
+                },
+                {
+                  "key": "omnitrace.super_step",
+                  "value": {
+                    "intValue": "4"
+                  }
+                },
+                {
+                  "key": "omnitrace.thread_id",
+                  "value": {
+                    "stringValue": "thread_refusal"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "name": "gen_ai.user.message",
+                  "timeUnixNano": "1700000000004000000",
+                  "attributes": [
+                    {
+                      "key": "content",
+                      "value": {
+                        "stringValue": "Keep a polite tone, under 120 words."
+                      }
+                    }
+                  ]
+                }
+              ],
+              "status": {
+                "code": "STATUS_CODE_OK"
+              }
+            },
+            {
+              "traceId": "abababababababababababababababab",
+              "spanId": "0000000000000005",
+              "name": "chat",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1700000000005000000",
+              "endTimeUnixNano": "1700000000005500000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.system",
+                  "value": {
+                    "stringValue": "omnitrace"
+                  }
+                },
+                {
+                  "key": "omnitrace.super_step",
+                  "value": {
+                    "intValue": "5"
+                  }
+                },
+                {
+                  "key": "omnitrace.thread_id",
+                  "value": {
+                    "stringValue": "thread_refusal"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "name": "gen_ai.user.message",
+                  "timeUnixNano": "1700000000005000000",
+                  "attributes": [
+                    {
+                      "key": "content",
+                      "value": {
+                        "stringValue": "The model refuses the whole prompt."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "exception",
+                  "timeUnixNano": "1700000000005000001",
+                  "attributes": [
+                    {
+                      "key": "exception.message",
+                      "value": {
+                        "stringValue": "rewrite a simulated password"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "status": {
+                "code": "STATUS_CODE_ERROR",
+                "message": "symptom"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
