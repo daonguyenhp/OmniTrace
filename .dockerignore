@@ -1,0 +1,13 @@
+.venv
+.uv-cache
+.uv
+.git
+.pytest_cache
+**/__pycache__
+*.pyc
+.env
+.cache
+models
+*.safetensors
+*.bin
+supply.otlp.json
