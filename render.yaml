@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: omnitrace
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    autoDeployTrigger: commit

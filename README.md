@@ -98,23 +98,24 @@ Built-in samples: `supply`, `tool-loop`, `overrefusal` (also under `examples/`).
 
 ---
 
-## Live demo
+## Live demo (Render)
 
-This app is a **small Python HTTP server**, not a static site. GitHub Pages cannot host it.
+This app is a **Python HTTP server**, not a static site. GitHub Pages cannot host it.
 
-| Option | Notes |
-| --- | --- |
-| **Local** (default) | `omnitrace serve` — best for CV / interviews |
-| **Cloud VM / Railway / Render / Fly.io** | Run `serve --host 0.0.0.0 --port $PORT`; Isolate & Fork work; Inspect needs RAM + `interp` |
-| **Docker** | See `Dockerfile` below |
+### Deploy on Render (free)
 
-Example public bind:
+1. Sign in at [dashboard.render.com](https://dashboard.render.com) with GitHub.
+2. **New → Blueprint** → connect `daonguyenhp/OmniTrace` (uses `render.yaml`).  
+   Or **New → Web Service** → select the repo → Language **Docker** → create.
+3. Wait for the build. Open the `*.onrender.com` URL.
+
+`render.yaml` + `Dockerfile` bind `0.0.0.0` and use Render’s `PORT`. Isolate and Fork work on the free tier. Inspect needs more RAM and the `interp` extra (not enabled in the default image). Free instances sleep when idle — the first request after a pause can take ~30–60s.
+
+Local public bind (optional):
 
 ```bash
 uv run omnitrace serve --host 0.0.0.0 --port 8765
 ```
-
-A `Dockerfile` is included for one-click deploy on Docker-capable hosts. Free tiers may sleep when idle; do not expose an unauthenticated public instance with untrusted uploads in production.
 
 ---
 
